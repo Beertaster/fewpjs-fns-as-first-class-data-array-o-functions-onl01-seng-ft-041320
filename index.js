@@ -31,7 +31,7 @@ let routine = [
   unleashDog
 ]
 
-function excersiseDog(dogName, dogBreed){
+function excerciseDog(dogName, dogBreed){
   let array = []
   for (i = 0 ; i < routine.length; i++) {
     array.push(routine[i](dogName, dogBreed))
