@@ -22,4 +22,20 @@ function unleashDog(dogName, dogBreed) {
   return `Unleash ${dogName} the ${dogBreed}`;
 }
 
-let routine = [ ]
+let routine = [
+  wakeDog,
+  leashDog,
+  walkToPark,
+  throwFrisbee,
+  walkHome,
+  unleashDog
+]
+
+function excersixeDog(dogName, dogBreed){
+  let array = []
+  for (i = 0 ; i < routine.length; i++) {
+    array.push(routine[i](dogName, dogBreed))
+    
+  }
+  return array;
+}
